@@ -1,10 +1,11 @@
 const express = require("express");
 const app = express();
 
+const userRouter = require("./routers/user");
+
+app.use(userRouter);
 app.use(express.json());
 
-app.get("/users", (req, res) => {
-  res.send("hello world");
+app.listen(3005, () => {
+  console.log(`listening on port ${3005}`);
 });
-
-app.listen(process.env.PORT || 3000);
