@@ -1,3 +1,3 @@
-# simple react 1.0
+# simple express 1.0
 
-This is the simplest possible nodejs api using express that responds to any request
+This is the simplest possible nodejs api using express
